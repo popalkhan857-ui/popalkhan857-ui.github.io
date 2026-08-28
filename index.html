@@ -1,71 +1,553 @@
-<!doctype html>
-<html lang="ps" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Noor Ahmad Popal | Perfusion Education</title>
-<style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Tahoma,sans-serif;background:#06111f;color:#eef6ff;line-height:1.8}
-header{background:linear-gradient(135deg,#062a45,#07131f);padding:42px 6% 55px;text-align:center}
-.logo{font-size:14px;color:#58d5ff;letter-spacing:2px}.hero h1{font-size:clamp(32px,7vw,62px);margin:12px 0}.hero p{max-width:760px;margin:auto;color:#b9c9d9;font-size:18px}
-nav{position:sticky;top:0;z-index:9;background:#081827ee;border-bottom:1px solid #23405a;overflow:auto;white-space:nowrap;padding:12px;text-align:center}nav a{color:#dcecff;text-decoration:none;margin:0 9px;font-size:14px}
-main{max-width:1100px;margin:auto;padding:20px 5%}.section{padding:45px 0}.section h2{font-size:30px;margin:0 0 8px}.muted{color:#aebed0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#0b1c2d;border:1px solid #213c55;border-radius:16px;padding:21px}.card h3{margin-top:0;color:#65d7ff}.card p{color:#b5c4d3;font-size:14px}
-.btn{display:inline-block;background:#38bdf8;color:#04111d;text-decoration:none;font-weight:bold;padding:10px 16px;border-radius:10px;margin:12px 5px}.btn.dark{background:transparent;color:#e9f5ff;border:1px solid #36546d}
-.tags span{display:inline-block;border:1px solid #294862;border-radius:20px;padding:4px 10px;margin:4px;color:#c6d8e9;font-size:13px}
-.notice{background:#0b2524;border-right:4px solid #22c55e;padding:16px;border-radius:8px}
-footer{text-align:center;border-top:1px solid #213c55;color:#91a4b7;padding:30px 5%}
-@media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.card{padding:16px}}@media(max-width:480px){.grid{grid-template-columns:1fr}.hero p{font-size:16px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Noor Popal | Clinical Cardiovascular Perfusionist</title>
+
+  <meta name="description" content="Professional portfolio of Noor Popal, Clinical Cardiovascular Perfusionist specializing in cardiopulmonary bypass and cardiac surgery.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8fc;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0b6e99;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #172033;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #0b6e99;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 8% 70px;
+      background: linear-gradient(135deg, #eaf7ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #0b6e99;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      color: #43546a;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #59687a;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      border-radius: 8px;
+      background: #0b6e99;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #084f70;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #0b6e99;
+      border: 2px solid #0b6e99;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #687789;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: #526174;
+    }
+
+    .highlight {
+      padding: 25px;
+      border-left: 5px solid #0b6e99;
+      background: #f1f8fc;
+      border-radius: 8px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(30,60,90,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+    }
+
+    .card .icon {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0b6e99;
+    }
+
+    .card p {
+      color: #667487;
+    }
+
+    .experience {
+      background: white;
+    }
+
+    .timeline {
+      max-width: 850px;
+      margin: auto;
+      border-left: 3px solid #0b6e99;
+      padding-left: 30px;
+    }
+
+    .timeline-item {
+      margin-bottom: 35px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background: #0b6e99;
+      border-radius: 50%;
+      position: absolute;
+      left: -39px;
+      top: 7px;
+    }
+
+    .timeline-item h3 {
+      color: #0b6e99;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item p {
+      color: #627184;
+    }
+
+    .achievements {
+      background: #eef8fc;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .stat {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 7px 20px rgba(0,0,0,0.06);
+    }
+
+    .stat h3 {
+      font-size: 42px;
+      color: #0b6e99;
+    }
+
+    .contact {
+      background: #102a43;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin: 15px auto 30px;
+      color: #d6e2ec;
+    }
+
+    .contact .btn-outline {
+      color: white;
+      border-color: white;
+    }
+
+    footer {
+      background: #091d2d;
+      color: #b9c8d4;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 800px) {
+
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+
+      .about-grid,
+      .cards,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="hero">
-<div class="logo">NOOR AHMAD POPAL</div>
-<h1>Clinical Cardiovascular Perfusionist</h1>
-<p>د پرفیوژن معیاري، منظم او د شواهدو پر بنسټ معلومات — د زده‌کوونکو، Perfusion Technicians او Clinical Perfusionists لپاره.</p>
-<a class="btn" href="#academy">Perfusion Academy</a><a class="btn dark" href="#about">زما پروفایل</a>
-</header>
-<nav><a href="#home">Home</a><a href="#about">About</a><a href="#academy">Academy</a><a href="#articles">Articles</a><a href="#topics">Topics</a><a href="#resources">References</a><a href="#contact">Contact</a></nav>
-<main id="home">
-<section id="about" class="section">
-<h2>د Noor Ahmad Popal په اړه</h2><p class="muted">Clinical Cardiovascular Perfusionist — هدف: د افغانستان لپاره د Cardiopulmonary Perfusion علمي او د لاسرسي وړ تعلیمي مرکز جوړول.</p>
-<div class="grid">
-<div class="card"><h3>Professional Profile</h3><p>د Cardiac Surgery، Cardiopulmonary Bypass او Clinical Perfusion په برخه کې مسلکي معلومات او تجربه.</p></div>
-<div class="card"><h3>Education</h3><p>د Perfusion بنسټیزو او پرمختللو موضوعاتو منظم درسونه، له ساده تشریح څخه تر Clinical concepts پورې.</p></div>
-<div class="card"><h3>Mission</h3><p>په پښتو او انګلیسي کې د باور وړ Perfusion Knowledge Base رامنځته کول.</p></div>
-</div></section>
 
-<section id="academy" class="section"><h2>Perfusion Academy</h2><p class="muted">له بنسټیزو معلوماتو څخه تر پرمختللو Clinical موضوعاتو پورې.</p>
-<div class="grid">
-<div class="card"><h3>01 — CPB Basics</h3><p>CPB physiology، pump، reservoir، oxygenator، tubing، cannulation او priming.</p></div>
-<div class="card"><h3>02 — Monitoring</h3><p>ACT، ABG، electrolytes، temperature، pressures، flow، lactate او oxygen delivery.</p></div>
-<div class="card"><h3>03 — Cardioplegia</h3><p>Antegrade، retrograde، blood/crystalloid cardioplegia او Del Nido principles.</p></div>
-<div class="card"><h3>04 — Blood Management</h3><p>Hemodilution، transfusion principles، cell salvage او ultrafiltration.</p></div>
-<div class="card"><h3>05 — Pediatric Perfusion</h3><p>ASD، VSD، AV Canal، PDA، PAPVC او congenital CPB principles.</p></div>
-<div class="card"><h3>06 — Emergencies</h3><p>Air، oxygenator، venous drainage، pump، pressure او hemodynamic emergencies.</p></div>
-</div></section>
+  <nav>
+    <div class="logo">Noor Popal</div>
 
-<section id="articles" class="section"><h2>Featured Articles</h2>
-<div class="grid">
-<div class="card"><h3>CPB څه شی دی؟</h3><p>Cardiopulmonary Bypass د زړه او سږو د فعالیت د موقتي ملاتړ لپاره څنګه کار کوي؟</p><a class="btn dark" href="#topics">Read topic</a></div>
-<div class="card"><h3>DO₂ او Perfusion Adequacy</h3><p>ولې oxygen delivery د CPB په جریان کې مهم دی او څنګه یې ارزونه کېږي؟</p><a class="btn dark" href="#topics">Read topic</a></div>
-<div class="card"><h3>ASD vs VSD Perfusion</h3><p>د congenital repairs پر مهال د Perfusionist لپاره مهم توپیرونه او د CPB پلان.</p><a class="btn dark" href="#topics">Read topic</a></div>
-</div></section>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<section id="topics" class="section"><h2>Core Perfusion Topics</h2>
-<div class="tags">
-<span>CPB</span><span>DO₂</span><span>VO₂</span><span>ABG</span><span>ACT</span><span>Heparin</span><span>Protamine</span><span>Cardioplegia</span><span>Alpha-stat</span><span>pH-stat</span><span>Temperature</span><span>Hemodilution</span><span>CUF</span><span>MUF</span><span>Blood Conservation</span><span>Pediatric CPB</span><span>ECMO</span><span>Weaning</span><span>Organ Protection</span>
-</div></section>
+  <section class="hero" id="home">
+    <div class="hero-content">
 
-<section id="resources" class="section"><h2>Scientific References</h2>
-<div class="grid">
-<div class="card"><h3>AmSECT</h3><p>Standards & Guidelines for Perfusion Practice، including 2025 Pediatric & Congenital Perfusion resources.</p><a class="btn" target="_blank" href="https://amsect.org/policy-practice/amsects-standards-and-guidelines">Official source</a></div>
-<div class="card"><h3>EACTS / EACTAIC / EBCP</h3><p>د 2024 CPB guideline د adult cardiac surgery لپاره د CPB، monitoring، organ protection او adverse events مهم بحثونه لري.</p><a class="btn" target="_blank" href="https://www.eacts.org/clinical-practice-guideline/2024-eacts-eactaic-ebcp-guidelines-on-cardiopulmonary-bypass-in-adult-cardiac-surgery/">Official source</a></div>
-<div class="card"><h3>Local SOP</h3><p>هر Clinical protocol باید د خپل روغتون د approved SOP، responsible surgeon، anesthesiologist او perfusion team له پرېکړو سره همغږی وي.</p></div>
-</div>
-<div class="notice" style="margin-top:20px"><b>Clinical Safety:</b> دا Website تعلیمي سرچینه ده؛ د ناروغ شخصي درملنه یا intraoperative decision-making نه بدلوي. د هر مرکز approved protocol او د Clinical Team judgment ته لومړیتوب ورکول کېږي.</div>
-</section>
+      <h1>
+        Noor <span>Popal</span>
+      </h1>
 
-<section id="contact" class="section"><h2>Contact</h2><div class="card"><p><b>Name:</b> Noor Ahmad Popal</p><p><b>Profession:</b> Clinical Cardiovascular Perfusionist</p><p><b>Country:</b> Afghanistan</p><p><b>Email / LinkedIn:</b> د رسمي معلوماتو د اضافه کولو لپاره وروسته دلته ځای شته.</p></div></section>
-</main>
-<footer>© 2026 Noor Ahmad Popal — Perfusion Education Platform</footer>
-</body></html>
+      <h2>Clinical Cardiovascular Perfusionist</h2>
+
+      <p>
+        Dedicated cardiac perfusion professional with experience in
+        cardiopulmonary bypass, cardiac surgery, extracorporeal circulation,
+        and perioperative patient care.
+      </p>
+
+      <a href="#about" class="btn">Explore My Profile</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>Professional profile</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p>
+          I am a Clinical Cardiovascular Perfusionist dedicated to providing
+          safe and effective perfusion support during cardiac surgery.
+        </p>
+
+        <p>
+          My professional interests include cardiopulmonary bypass,
+          cardioplegia management, patient monitoring, blood gas analysis,
+          pediatric and adult cardiac surgery, and extracorporeal circulation.
+        </p>
+
+        <p>
+          I continuously work to improve my clinical knowledge and technical
+          skills in cardiovascular perfusion and cardiac critical care.
+        </p>
+
+      </div>
+
+      <div class="highlight">
+
+        <h3>Professional Focus</h3>
+
+        <p>
+          Cardiopulmonary Bypass • Cardiac Perfusion • Cardioplegia •
+          Pediatric Cardiac Surgery • Adult Cardiac Surgery • ABG Analysis
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="skills">
+
+    <div class="section-title">
+      <h2>Professional Skills</h2>
+      <p>Core areas of clinical expertise</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🫀</div>
+        <h3>Cardiopulmonary Bypass</h3>
+        <p>
+          CPB management, circuit preparation, monitoring and safe conduct
+          of cardiopulmonary bypass.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💉</div>
+        <h3>Cardioplegia</h3>
+        <p>
+          Experience with cardioplegia strategies including antegrade,
+          retrograde and blood cardioplegia techniques.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧪</div>
+        <h3>ABG Analysis</h3>
+        <p>
+          Monitoring and interpretation of arterial blood gases,
+          electrolytes and acid-base balance during CPB.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">👶</div>
+        <h3>Pediatric Perfusion</h3>
+        <p>
+          Perfusion support for pediatric cardiac procedures with attention
+          to patient size, priming and physiological requirements.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">❤️</div>
+        <h3>Cardiac Surgery</h3>
+        <p>
+          Perfusion support during congenital and acquired cardiac surgical
+          procedures.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📊</div>
+        <h3>Patient Monitoring</h3>
+        <p>
+          Continuous monitoring of perfusion parameters, temperature,
+          pressures, oxygenation and hemodynamic status.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="experience" id="experience">
+
+    <div class="section-title">
+      <h2>Professional Experience</h2>
+      <p>Clinical cardiovascular perfusion experience</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Clinical Cardiovascular Perfusionist</h3>
+        <p>
+          Cardiac surgery and cardiopulmonary bypass practice in
+          Afghanistan.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Cardiac Surgery & Perfusion</h3>
+        <p>
+          Experience supporting adult and pediatric cardiac surgical
+          procedures and extracorporeal circulation.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Critical Care Background</h3>
+        <p>
+          Clinical experience in critical care, cardiac care and
+          perioperative patient management.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="achievements">
+
+    <div class="section-title">
+      <h2>Professional Highlights</h2>
+      <p>Commitment to cardiac surgical care</p>
+    </div>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h3>CPB</h3>
+        <p>Cardiopulmonary Bypass</p>
+      </div>
+
+      <div class="stat">
+        <h3>Adult</h3>
+        <p>Cardiac Perfusion</p>
+      </div>
+
+      <div class="stat">
+        <h3>Pediatric</h3>
+        <p>Cardiac Perfusion</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <h2>Let's Connect</h2>
+      <p>
+        For professional collaboration, networking and cardiovascular
+        perfusion opportunities.
+      </p>
+    </div>
+
+    <a href="mailto:your-email@example.com" class="btn">
+      Email Me
+    </a>
+
+    <a href="#" class="btn btn-outline">
+      LinkedIn
+    </a>
+
+  </section>
+
+
+  <footer>
+
+    <p>
+      © 2026 Noor Popal. All Rights Reserved.
+    </p>
+
+    <p>
+      Clinical Cardiovascular Perfusionist
+    </p>
+
+  </footer>
+
+</body>
+        </html>
