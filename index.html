@@ -1,553 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Noor Popal | Clinical Cardiovascular Perfusionist</title>
+<title>Noor Popal | Clinical Cardiovascular Perfusionist</title>
 
-  <meta name="description" content="Professional portfolio of Noor Popal, Clinical Cardiovascular Perfusionist specializing in cardiopulmonary bypass and cardiac surgery.">
+<meta name="description" content="Noor Popal - Clinical Cardiovascular Perfusionist specializing in cardiopulmonary bypass, cardiac surgery and extracorporeal circulation.">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<style>
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f8fc;
-      color: #172033;
-      line-height: 1.7;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(10px);
-      padding: 16px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
-    }
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f6f9fc;
+color:#142235;
+line-height:1.7;
+}
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #0b6e99;
-    }
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(12px);
+box-shadow:0 3px 20px rgba(0,0,0,.08);
+z-index:1000;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
+.logo{
+font-size:23px;
+font-weight:800;
+color:#087da8;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #172033;
-      font-weight: 600;
-    }
+nav ul{
+display:flex;
+gap:28px;
+list-style:none;
+}
 
-    nav a:hover {
-      color: #0b6e99;
-    }
+nav a{
+text-decoration:none;
+color:#1d2d3d;
+font-weight:600;
+transition:.3s;
+}
 
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 120px 8% 70px;
-      background: linear-gradient(135deg, #eaf7ff, #ffffff);
-    }
+nav a:hover{
+color:#087da8;
+}
 
-    .hero-content {
-      max-width: 800px;
-    }
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:130px 8% 80px;
+background:
+linear-gradient(135deg,#e9f8ff 0%,#ffffff 55%,#eef8fb 100%);
+}
 
-    .hero h1 {
-      font-size: clamp(42px, 7vw, 75px);
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
+.hero-content{
+max-width:850px;
+}
 
-    .hero h1 span {
-      color: #0b6e99;
-    }
+.badge{
+display:inline-block;
+padding:8px 15px;
+border-radius:30px;
+background:#dff4fb;
+color:#087da8;
+font-weight:700;
+margin-bottom:22px;
+}
 
-    .hero h2 {
-      font-size: 25px;
-      margin-bottom: 20px;
-      color: #43546a;
-    }
+.hero h1{
+font-size:clamp(45px,8vw,82px);
+line-height:1;
+margin-bottom:18px;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #59687a;
-      max-width: 700px;
-      margin-bottom: 30px;
-    }
+.hero h1 span{
+color:#087da8;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 13px 25px;
-      border-radius: 8px;
-      background: #0b6e99;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin-right: 10px;
-      transition: 0.3s;
-    }
+.hero h2{
+font-size:27px;
+color:#43576b;
+margin-bottom:20px;
+}
 
-    .btn:hover {
-      background: #084f70;
-      transform: translateY(-2px);
-    }
+.hero p{
+font-size:19px;
+max-width:720px;
+color:#5c6d7e;
+margin-bottom:32px;
+}
 
-    .btn-outline {
-      background: transparent;
-      color: #0b6e99;
-      border: 2px solid #0b6e99;
-    }
+.btn{
+display:inline-block;
+padding:14px 25px;
+border-radius:8px;
+background:#087da8;
+color:white;
+text-decoration:none;
+font-weight:700;
+margin-right:10px;
+transition:.3s;
+}
 
-    section {
-      padding: 90px 8%;
-    }
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(8,125,168,.25);
+}
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
+.outline{
+background:transparent;
+color:#087da8;
+border:2px solid #087da8;
+}
 
-    .section-title h2 {
-      font-size: 38px;
-      margin-bottom: 10px;
-    }
+section{
+padding:100px 8%;
+}
 
-    .section-title p {
-      color: #687789;
-    }
+.title{
+text-align:center;
+margin-bottom:55px;
+}
 
-    .about {
-      background: white;
-    }
+.title h2{
+font-size:40px;
+margin-bottom:10px;
+}
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
+.title p{
+color:#718092;
+}
 
-    .about-text p {
-      margin-bottom: 18px;
-      color: #526174;
-    }
+.about{
+background:white;
+}
 
-    .highlight {
-      padding: 25px;
-      border-left: 5px solid #0b6e99;
-      background: #f1f8fc;
-      border-radius: 8px;
-    }
+.about-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1.3fr .7fr;
+gap:55px;
+align-items:center;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.about-text p{
+margin-bottom:18px;
+color:#586a7b;
+}
 
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(30,60,90,0.08);
-      transition: 0.3s;
-    }
+.profile-card{
+background:#f0f9fc;
+padding:35px;
+border-radius:18px;
+border:1px solid #d8edf4;
+}
 
-    .card:hover {
-      transform: translateY(-7px);
-    }
+.profile-card h3{
+color:#087da8;
+margin-bottom:18px;
+font-size:25px;
+}
 
-    .card .icon {
-      font-size: 35px;
-      margin-bottom: 15px;
-    }
+.profile-card p{
+margin:10px 0;
+color:#526577;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #0b6e99;
-    }
+.skills{
+background:#f5f9fc;
+}
 
-    .card p {
-      color: #667487;
-    }
+.grid{
+max-width:1150px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
 
-    .experience {
-      background: white;
-    }
+.card{
+background:white;
+padding:32px;
+border-radius:16px;
+box-shadow:0 8px 30px rgba(25,55,80,.07);
+transition:.3s;
+border:1px solid #edf1f5;
+}
 
-    .timeline {
-      max-width: 850px;
-      margin: auto;
-      border-left: 3px solid #0b6e99;
-      padding-left: 30px;
-    }
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(25,55,80,.12);
+}
 
-    .timeline-item {
-      margin-bottom: 35px;
-      position: relative;
-    }
+.icon{
+font-size:38px;
+margin-bottom:15px;
+}
 
-    .timeline-item::before {
-      content: "";
-      width: 15px;
-      height: 15px;
-      background: #0b6e99;
-      border-radius: 50%;
-      position: absolute;
-      left: -39px;
-      top: 7px;
-    }
+.card h3{
+color:#087da8;
+margin-bottom:10px;
+font-size:21px;
+}
 
-    .timeline-item h3 {
-      color: #0b6e99;
-      margin-bottom: 5px;
-    }
+.card p{
+color:#657688;
+}
 
-    .timeline-item p {
-      color: #627184;
-    }
+.experience{
+background:white;
+}
 
-    .achievements {
-      background: #eef8fc;
-    }
+.timeline{
+max-width:900px;
+margin:auto;
+position:relative;
+border-left:3px solid #087da8;
+padding-left:35px;
+}
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      max-width: 900px;
-      margin: auto;
-    }
+.item{
+position:relative;
+margin-bottom:40px;
+}
 
-    .stat {
-      text-align: center;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 7px 20px rgba(0,0,0,0.06);
-    }
+.item:before{
+content:"";
+position:absolute;
+left:-45px;
+top:6px;
+width:16px;
+height:16px;
+border-radius:50%;
+background:#087da8;
+border:4px solid white;
+box-shadow:0 0 0 2px #087da8;
+}
 
-    .stat h3 {
-      font-size: 42px;
-      color: #0b6e99;
-    }
+.item h3{
+color:#087da8;
+font-size:23px;
+}
 
-    .contact {
-      background: #102a43;
-      color: white;
-      text-align: center;
-    }
+.item .place{
+font-weight:bold;
+color:#26394c;
+margin:3px 0 8px;
+}
 
-    .contact p {
-      max-width: 650px;
-      margin: 15px auto 30px;
-      color: #d6e2ec;
-    }
+.item p{
+color:#657688;
+}
 
-    .contact .btn-outline {
-      color: white;
-      border-color: white;
-    }
+.education{
+background:#eef8fc;
+}
 
-    footer {
-      background: #091d2d;
-      color: #b9c8d4;
-      text-align: center;
-      padding: 25px;
-    }
+.education-card{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 30px rgba(0,0,0,.06);
+}
 
-    @media (max-width: 800px) {
+.education-card div{
+padding:20px 0;
+border-bottom:1px solid #e5edf2;
+}
 
-      nav ul {
-        display: none;
-      }
+.education-card div:last-child{
+border-bottom:none;
+}
 
-      .hero {
-        padding-left: 6%;
-        padding-right: 6%;
-      }
+.education-card h3{
+color:#087da8;
+margin-bottom:5px;
+}
 
-      section {
-        padding: 70px 6%;
-      }
+.achievements{
+background:#102b40;
+color:white;
+}
 
-      .about-grid,
-      .cards,
-      .stats {
-        grid-template-columns: 1fr;
-      }
+.achievements .title p{
+color:#c8d7e2;
+}
 
-      .hero h1 {
-        font-size: 48px;
-      }
-    }
-  </style>
+.stats{
+max-width:1000px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.stat{
+text-align:center;
+padding:35px 20px;
+border:1px solid rgba(255,255,255,.12);
+border-radius:15px;
+background:rgba(255,255,255,.04);
+}
+
+.stat h3{
+font-size:38px;
+color:#8edcf5;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#d2dee7;
+}
+
+.contact{
+background:white;
+text-align:center;
+}
+
+.contact p{
+max-width:700px;
+margin:0 auto 30px;
+color:#617284;
+}
+
+footer{
+background:#081d2d;
+color:#b9c8d4;
+text-align:center;
+padding:28px 15px;
+}
+
+footer strong{
+color:white;
+}
+
+@media(max-width:850px){
+
+nav ul{
+display:none;
+}
+
+.hero{
+padding-left:6%;
+padding-right:6%;
+}
+
+section{
+padding:75px 6%;
+}
+
+.about-grid,
+.grid,
+.stats{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.timeline{
+padding-left:25px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <nav>
-    <div class="logo">Noor Popal</div>
+<nav>
 
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<div class="logo">Noor Popal</div>
 
-  <section class="hero" id="home">
-    <div class="hero-content">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-      <h1>
-        Noor <span>Popal</span>
-      </h1>
-
-      <h2>Clinical Cardiovascular Perfusionist</h2>
-
-      <p>
-        Dedicated cardiac perfusion professional with experience in
-        cardiopulmonary bypass, cardiac surgery, extracorporeal circulation,
-        and perioperative patient care.
-      </p>
-
-      <a href="#about" class="btn">Explore My Profile</a>
-      <a href="#contact" class="btn btn-outline">Contact Me</a>
-
-    </div>
-  </section>
-
-  <section class="about" id="about">
-
-    <div class="section-title">
-      <h2>About Me</h2>
-      <p>Professional profile</p>
-    </div>
-
-    <div class="about-grid">
-
-      <div class="about-text">
-
-        <p>
-          I am a Clinical Cardiovascular Perfusionist dedicated to providing
-          safe and effective perfusion support during cardiac surgery.
-        </p>
-
-        <p>
-          My professional interests include cardiopulmonary bypass,
-          cardioplegia management, patient monitoring, blood gas analysis,
-          pediatric and adult cardiac surgery, and extracorporeal circulation.
-        </p>
-
-        <p>
-          I continuously work to improve my clinical knowledge and technical
-          skills in cardiovascular perfusion and cardiac critical care.
-        </p>
-
-      </div>
-
-      <div class="highlight">
-
-        <h3>Professional Focus</h3>
-
-        <p>
-          Cardiopulmonary Bypass • Cardiac Perfusion • Cardioplegia •
-          Pediatric Cardiac Surgery • Adult Cardiac Surgery • ABG Analysis
-        </p>
-
-      </div>
-
-    </div>
-  </section>
+</nav>
 
 
-  <section id="skills">
+<section class="hero" id="home">
 
-    <div class="section-title">
-      <h2>Professional Skills</h2>
-      <p>Core areas of clinical expertise</p>
-    </div>
+<div class="hero-content">
 
-    <div class="cards">
+<div class="badge">Clinical Cardiovascular Perfusionist</div>
 
-      <div class="card">
-        <div class="icon">🫀</div>
-        <h3>Cardiopulmonary Bypass</h3>
-        <p>
-          CPB management, circuit preparation, monitoring and safe conduct
-          of cardiopulmonary bypass.
-        </p>
-      </div>
+<h1>Noor <span>Popal</span></h1>
 
-      <div class="card">
-        <div class="icon">💉</div>
-        <h3>Cardioplegia</h3>
-        <p>
-          Experience with cardioplegia strategies including antegrade,
-          retrograde and blood cardioplegia techniques.
-        </p>
-      </div>
+<h2>Cardiac Perfusion • Cardiopulmonary Bypass • Cardiac Surgery</h2>
 
-      <div class="card">
-        <div class="icon">🧪</div>
-        <h3>ABG Analysis</h3>
-        <p>
-          Monitoring and interpretation of arterial blood gases,
-          electrolytes and acid-base balance during CPB.
-        </p>
-      </div>
+<p>
+Dedicated Clinical Cardiovascular Perfusionist with professional
+experience in cardiopulmonary bypass, cardiac surgery,
+extracorporeal circulation and critical patient care.
+</p>
 
-      <div class="card">
-        <div class="icon">👶</div>
-        <h3>Pediatric Perfusion</h3>
-        <p>
-          Perfusion support for pediatric cardiac procedures with attention
-          to patient size, priming and physiological requirements.
-        </p>
-      </div>
+<a href="#about" class="btn">Explore My Profile</a>
 
-      <div class="card">
-        <div class="icon">❤️</div>
-        <h3>Cardiac Surgery</h3>
-        <p>
-          Perfusion support during congenital and acquired cardiac surgical
-          procedures.
-        </p>
-      </div>
+<a href="#contact" class="btn outline">Contact Me</a>
 
-      <div class="card">
-        <div class="icon">📊</div>
-        <h3>Patient Monitoring</h3>
-        <p>
-          Continuous monitoring of perfusion parameters, temperature,
-          pressures, oxygenation and hemodynamic status.
-        </p>
-      </div>
+</div>
 
-    </div>
-  </section>
+</section>
 
 
-  <section class="experience" id="experience">
+<section class="about" id="about">
 
-    <div class="section-title">
-      <h2>Professional Experience</h2>
-      <p>Clinical cardiovascular perfusion experience</p>
-    </div>
+<div class="title">
+<h2>About Me</h2>
+<p>Professional cardiovascular perfusion profile</p>
+</div>
 
-    <div class="timeline">
+<div class="about-grid">
 
-      <div class="timeline-item">
-        <h3>Clinical Cardiovascular Perfusionist</h3>
-        <p>
-          Cardiac surgery and cardiopulmonary bypass practice in
-          Afghanistan.
-        </p>
-      </div>
+<div class="about-text">
 
-      <div class="timeline-item">
-        <h3>Cardiac Surgery & Perfusion</h3>
-        <p>
-          Experience supporting adult and pediatric cardiac surgical
-          procedures and extracorporeal circulation.
-        </p>
-      </div>
+<p>
+I am a Clinical Cardiovascular Perfusionist dedicated to providing
+safe, precise and effective perfusion support during cardiac surgery.
+</p>
 
-      <div class="timeline-item">
-        <h3>Critical Care Background</h3>
-        <p>
-          Clinical experience in critical care, cardiac care and
-          perioperative patient management.
-        </p>
-      </div>
+<p>
+My clinical interests include cardiopulmonary bypass, cardioplegia
+management, blood gas analysis, hemodynamic monitoring and
+extracorporeal circulation.
+</p>
 
-    </div>
+<p>
+I have experience supporting both adult and pediatric cardiac
+surgical procedures and continuously work to improve my clinical
+knowledge and technical skills.
+</p>
 
-  </section>
+</div>
 
+<div class="profile-card">
 
-  <section class="achievements">
+<h3>Professional Focus</h3>
 
-    <div class="section-title">
-      <h2>Professional Highlights</h2>
-      <p>Commitment to cardiac surgical care</p>
-    </div>
+<p>🫀 Cardiopulmonary Bypass</p>
+<p>❤️ Cardiac Perfusion</p>
+<p>🧪 ABG & Acid-Base Management</p>
+<p>👶 Pediatric Cardiac Surgery</p>
+<p>🏥 Adult Cardiac Surgery</p>
+<p>📊 Hemodynamic Monitoring</p>
 
-    <div class="stats">
+</div>
 
-      <div class="stat">
-        <h3>CPB</h3>
-        <p>Cardiopulmonary Bypass</p>
-      </div>
+</div>
 
-      <div class="stat">
-        <h3>Adult</h3>
-        <p>Cardiac Perfusion</p>
-      </div>
-
-      <div class="stat">
-        <h3>Pediatric</h3>
-        <p>Cardiac Perfusion</p>
-      </div>
-
-    </div>
-
-  </section>
+</section>
 
 
-  <section class="contact" id="contact">
+<section class="skills" id="skills">
 
-    <div class="section-title">
-      <h2>Let's Connect</h2>
-      <p>
-        For professional collaboration, networking and cardiovascular
-        perfusion opportunities.
-      </p>
-    </div>
+<div class="title">
 
-    <a href="mailto:your-email@example.com" class="btn">
-      Email Me
-    </a>
+<h2>Clinical Skills</h2>
 
-    <a href="#" class="btn btn-outline">
-      LinkedIn
-    </a>
+<p>Core areas of professional practice</p>
 
-  </section>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🫀</div>
+<h3>Cardiopulmonary Bypass</h3>
+<p>
+CPB circuit preparation, initiation, maintenance, monitoring
+and safe separation from bypass.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">💉</div>
+<h3>Cardioplegia</h3>
+<p>
+Knowledge of cardioplegia strategies and myocardial protection
+during cardiac surgery.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">🧪</div>
+<h3>ABG Analysis</h3>
+<p>
+Assessment of blood gases, electrolytes, acid-base balance and
+physiological changes during CPB.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">👶</div>
+<h3>Pediatric Perfusion</h3>
+<p>
+Perfusion support for pediatric cardiac procedures with attention
+to patient size, priming and physiological requirements.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">❤️</div>
+<h3>Cardiac Surgery</h3>
+<p>
+Perfusion support for congenital and acquired cardiac surgical
+procedures.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">📈</div>
+<h3>Patient Monitoring</h3>
+<p>
+Continuous monitoring of pressure, temperature, oxygenation,
+flow and other perfusion parameters.
+</p>
+</div>
+
+</div>
+
+</section>
 
 
-  <footer>
+<section class="experience" id="experience">
 
-    <p>
-      © 2026 Noor Popal. All Rights Reserved.
-    </p>
+<div class="title">
 
-    <p>
-      Clinical Cardiovascular Perfusionist
-    </p>
+<h2>Professional Experience</h2>
 
-  </footer>
+<p>Clinical cardiovascular perfusion experience</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="item">
+
+<h3>Clinical Cardiovascular Perfusionist</h3>
+
+<div class="place">
+Cardiac Surgery & Cardiopulmonary Bypass
+</div>
+
+<p>
+Professional experience supporting cardiac surgical procedures,
+including CPB management, cardioplegia and perioperative
+patient monitoring.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<h3>Mohmand International Hospital</h3>
+
+<div class="place">
+Cardiac Perfusionist
+</div>
+
+<p>
+Experience in cardiac surgery and cardiopulmonary bypass
+practice as part of a multidisciplinary cardiac surgical team.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<h3>French Medical Institute for Mothers and Children</h3>
+
+<div class="place">
+Clinical Cardiovascular Perfusion
+</div>
+
+<p>
+Professional cardiac perfusion experience in a specialized
+healthcare environment.
+</p>
+
+</div>
+
+
+<div class="item">
+
+<h3>Kabul Ali Abad Hospital</h3>
+
+<div class="place">
+Cardiac & Thoracic Surgical Care
+</div>
+
+<p>
+Clinical experience related to cardiac surgical and critical
+care services.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="education" id="education">
+
+<div class="title">
+
+<h2>Education & Certifications</h2>
+
+<p>Academic and professional development</p>
+
+</div>
+
+<div class="education-card">
+
+<div>
+
+<h3>Cardiovascular Perfusion</h3>
+
+<p>
+Professional training and clinical development in cardiac
+perfusion and cardiopulmonary bypass.
+</p>
+
+</div>
+
+<div>
+
+<h3>Nursing Education</h3>
+
+<p>
+Nursing education with clinical experience in critical care
+and cardiac care environments.
+</p>
+
+</div>
+
+<div>
+
+<h3>Professional Certifications</h3>
+
+<p>
+BLS • ACLS • PALS • ABG • Critical Care
+</p>
+
+</div>
+
+<div>
+
+<h3>Continuous Professional Development</h3>
+
+<p>
+Ongoing learning in cardiopulmonary bypass, cardiac surgery,
+perfusion technology and critical care.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="achievements">
+
+<div class="title">
+
+<h2>Professional Highlights</h2>
+
+<p>Dedicated to safe and high-quality cardiac surgical care</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+
+<h3>4+</h3>
+
+<p>Years in Cardiovascular Perfusion</p>
+
+</div>
+
+<div class="stat">
+
+<h3>CPB</h3>
+
+<p>Cardiopulmonary Bypass Experience</p>
+
+</div>
+
+<div class="stat">
+
+<h3>Adult & Pediatric</h3>
+
+<p>Cardiac Perfusion Experience</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="title">
+
+<h2>Let's Connect</h2>
+
+<p>
+I am open to professional networking, collaboration,
+learning opportunities and cardiovascular perfusion discussions.
+</p>
+
+</div>
+
+<a href="mailto:your-email@example.com" class="btn">
+Email Me
+</a>
+
+<a href="#" class="btn outline">
+LinkedIn
+</a>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 <strong>Noor Popal</strong>. All Rights Reserved.
+</p>
+
+<p>
+Clinical Cardiovascular Perfusionist
+</p>
+
+</footer>
 
 </body>
-        </html>
+</html>
