@@ -1,777 +1,829 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="MAVlIhcb0BKdS5Auk124G2Ew-59ecvzRpWhpPNS2CYc" />
-<title>Noor Popal | Clinical Cardiovascular Perfusionist</title>
-
-<meta name="description" content="Noor Popal - Clinical Cardiovascular Perfusionist specializing in cardiopulmonary bypass, cardiac surgery and extracorporeal circulation.">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f6f9fc;
-color:#142235;
-line-height:1.7;
-}
-
-nav{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,.96);
-backdrop-filter:blur(12px);
-box-shadow:0 3px 20px rgba(0,0,0,.08);
-z-index:1000;
-}
-
-.logo{
-font-size:23px;
-font-weight:800;
-color:#087da8;
-}
-
-nav ul{
-display:flex;
-gap:28px;
-list-style:none;
-}
-
-nav a{
-text-decoration:none;
-color:#1d2d3d;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:#087da8;
-}
-
-.hero{
-min-height:100vh;
-display:flex;
-align-items:center;
-padding:130px 8% 80px;
-background:
-linear-gradient(135deg,#e9f8ff 0%,#ffffff 55%,#eef8fb 100%);
-}
-
-.hero-content{
-max-width:850px;
-}
-
-.badge{
-display:inline-block;
-padding:8px 15px;
-border-radius:30px;
-background:#dff4fb;
-color:#087da8;
-font-weight:700;
-margin-bottom:22px;
-}
-
-.hero h1{
-font-size:clamp(45px,8vw,82px);
-line-height:1;
-margin-bottom:18px;
-}
-
-.hero h1 span{
-color:#087da8;
-}
-
-.hero h2{
-font-size:27px;
-color:#43576b;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:19px;
-max-width:720px;
-color:#5c6d7e;
-margin-bottom:32px;
-}
-
-.btn{
-display:inline-block;
-padding:14px 25px;
-border-radius:8px;
-background:#087da8;
-color:white;
-text-decoration:none;
-font-weight:700;
-margin-right:10px;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(8,125,168,.25);
-}
-
-.outline{
-background:transparent;
-color:#087da8;
-border:2px solid #087da8;
-}
-
-section{
-padding:100px 8%;
-}
-
-.title{
-text-align:center;
-margin-bottom:55px;
-}
-
-.title h2{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.title p{
-color:#718092;
-}
-
-.about{
-background:white;
-}
-
-.about-grid{
-max-width:1100px;
-margin:auto;
-display:grid;
-grid-template-columns:1.3fr .7fr;
-gap:55px;
-align-items:center;
-}
-
-.about-text p{
-margin-bottom:18px;
-color:#586a7b;
-}
-
-.profile-card{
-background:#f0f9fc;
-padding:35px;
-border-radius:18px;
-border:1px solid #d8edf4;
-}
-
-.profile-card h3{
-color:#087da8;
-margin-bottom:18px;
-font-size:25px;
-}
-
-.profile-card p{
-margin:10px 0;
-color:#526577;
-}
-
-.skills{
-background:#f5f9fc;
-}
-
-.grid{
-max-width:1150px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.card{
-background:white;
-padding:32px;
-border-radius:16px;
-box-shadow:0 8px 30px rgba(25,55,80,.07);
-transition:.3s;
-border:1px solid #edf1f5;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 15px 35px rgba(25,55,80,.12);
-}
-
-.icon{
-font-size:38px;
-margin-bottom:15px;
-}
-
-.card h3{
-color:#087da8;
-margin-bottom:10px;
-font-size:21px;
-}
-
-.card p{
-color:#657688;
-}
-
-.experience{
-background:white;
-}
-
-.timeline{
-max-width:900px;
-margin:auto;
-position:relative;
-border-left:3px solid #087da8;
-padding-left:35px;
-}
-
-.item{
-position:relative;
-margin-bottom:40px;
-}
-
-.item:before{
-content:"";
-position:absolute;
-left:-45px;
-top:6px;
-width:16px;
-height:16px;
-border-radius:50%;
-background:#087da8;
-border:4px solid white;
-box-shadow:0 0 0 2px #087da8;
-}
-
-.item h3{
-color:#087da8;
-font-size:23px;
-}
-
-.item .place{
-font-weight:bold;
-color:#26394c;
-margin:3px 0 8px;
-}
-
-.item p{
-color:#657688;
-}
-
-.education{
-background:#eef8fc;
-}
-
-.education-card{
-max-width:1000px;
-margin:auto;
-background:white;
-padding:35px;
-border-radius:18px;
-box-shadow:0 8px 30px rgba(0,0,0,.06);
-}
-
-.education-card div{
-padding:20px 0;
-border-bottom:1px solid #e5edf2;
-}
-
-.education-card div:last-child{
-border-bottom:none;
-}
-
-.education-card h3{
-color:#087da8;
-margin-bottom:5px;
-}
-
-.achievements{
-background:#102b40;
-color:white;
-}
-
-.achievements .title p{
-color:#c8d7e2;
-}
-
-.stats{
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.stat{
-text-align:center;
-padding:35px 20px;
-border:1px solid rgba(255,255,255,.12);
-border-radius:15px;
-background:rgba(255,255,255,.04);
-}
-
-.stat h3{
-font-size:38px;
-color:#8edcf5;
-margin-bottom:8px;
-}
-
-.stat p{
-color:#d2dee7;
-}
-
-.contact{
-background:white;
-text-align:center;
-}
-
-.contact p{
-max-width:700px;
-margin:0 auto 30px;
-color:#617284;
-}
-
-footer{
-background:#081d2d;
-color:#b9c8d4;
-text-align:center;
-padding:28px 15px;
-}
-
-footer strong{
-color:white;
-}
-
-@media(max-width:850px){
-
-nav ul{
-display:none;
-}
-
-.hero{
-padding-left:6%;
-padding-right:6%;
-}
-
-section{
-padding:75px 6%;
-}
-
-.about-grid,
-.grid,
-.stats{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-.hero h2{
-font-size:22px;
-}
-
-.timeline{
-padding-left:25px;
-}
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Noor Ahmad Popal | Clinical Cardiovascular Perfusionist</title>
+
+    <meta name="description"
+          content="Noor Ahmad Popal - Clinical Cardiovascular Perfusionist. Professional experience in cardiopulmonary bypass, cardiac surgery, perfusion technology and cardiovascular perfusion education.">
+
+    <meta name="keywords"
+          content="Noor Ahmad Popal, Cardiovascular Perfusionist, Clinical Perfusionist, CPB, Cardiopulmonary Bypass, Cardiac Surgery, Perfusion Afghanistan">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            background: #f4f7fb;
+            color: #17202a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #071e35, #0b5278);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0b5278;
+            margin: 0 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #0b5278;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e4edf4;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #123f5b;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f7fafc;
+            border-left: 5px solid #0b5278;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .pashto {
+            direction: rtl;
+            text-align: right;
+            font-family: "Noto Sans", Arial, sans-serif;
+        }
+
+        .dari {
+            direction: rtl;
+            text-align: right;
+            font-family: "Noto Sans", Arial, sans-serif;
+        }
+
+        .english {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .highlight {
+            background: #eef7fb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: #071e35;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header h2 {
+                font-size: 18px;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 22px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header>
+
+    <!-- خپل اصلي عکس نوم دلته ولیکه -->
+    <img src="YOUR-IMAGE-NAME.jpg"
+         alt="Noor Ahmad Popal - Clinical Cardiovascular Perfusionist"
+         class="profile-image">
+
+    <h1>Noor Ahmad Popal</h1>
+
+    <h2>Clinical Cardiovascular Perfusionist</h2>
+
+    <p>
+        Cardiovascular Perfusion | Cardiopulmonary Bypass |
+        Cardiac Surgery | Perfusion Education
+    </p>
+
+</header>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
 <nav>
 
-<div class="logo">Noor Popal</div>
-
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#surgeries">Surgeries</a>
+    <a href="#technology">Equipment</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#perfusionschool">Perfusion Education</a>
+    <a href="#contact">Contact</a>
 
 </nav>
 
 
-<section class="hero" id="home">
+<!-- =====================================================
+     ABOUT ME
+===================================================== -->
 
-<div class="hero-content">
+<section id="about">
 
-<div class="badge">Clinical Cardiovascular Perfusionist</div>
+    <h2>About Me</h2>
 
-<h1>Noor <span>Popal</span></h1>
+    <div class="english">
 
-<h2>Cardiac Perfusion • Cardiopulmonary Bypass • Cardiac Surgery</h2>
+        <p>
+            I am <strong>Noor Ahmad Popal</strong>, a Clinical Cardiovascular
+            Perfusionist with five years of professional experience in
+            cardiovascular perfusion and cardiac surgery.
+        </p>
 
-<p>
-Dedicated Clinical Cardiovascular Perfusionist with professional
-experience in cardiopulmonary bypass, cardiac surgery,
-extracorporeal circulation and critical patient care.
-</p>
+        <p>
+            I have worked in reputable cardiac and medical institutions
+            in Afghanistan and have participated in a wide range of
+            congenital, valvular and coronary cardiac surgical procedures
+            requiring cardiopulmonary bypass.
+        </p>
 
-<a href="#about" class="btn">Explore My Profile</a>
+        <p>
+            I have worked with national and international cardiac surgeons
+            and multidisciplinary cardiac surgery teams.
+        </p>
 
-<a href="#contact" class="btn outline">Contact Me</a>
-
-</div>
-
-</section>
+    </div>
 
 
-<section class="about" id="about">
+    <div class="pashto">
 
-<div class="title">
-<h2>About Me</h2>
-<p>Professional cardiovascular perfusion profile</p>
-</div>
+        <h3>زما په اړه</h3>
 
-<div class="about-grid">
+        <p>
+            زه <strong>نوراحمد پوپل</strong> یم، Clinical Cardiovascular
+            Perfusionist یم او د Cardiovascular Perfusion په برخه کې
+            پنځه کلنه مسلکي کاري تجربه لرم.
+        </p>
 
-<div class="about-text">
+        <p>
+            ما د افغانستان په یو شمېر معتبرو او مجهزو روغتونونو کې د
+            زړه د جراحۍ او Cardiopulmonary Bypass په برخه کې کار کړی دی.
+        </p>
 
-<p>
-I am a Clinical Cardiovascular Perfusionist dedicated to providing
-safe, precise and effective perfusion support during cardiac surgery.
-</p>
+        <p>
+            د خپل مسلکي فعالیت په جریان کې مې د داخلي او بهرنیو
+            Cardiac Surgeons او Multidisciplinary Cardiac Surgery Team
+            سره کار کړی دی.
+        </p>
 
-<p>
-My clinical interests include cardiopulmonary bypass, cardioplegia
-management, blood gas analysis, hemodynamic monitoring and
-extracorporeal circulation.
-</p>
-
-<p>
-I have experience supporting both adult and pediatric cardiac
-surgical procedures and continuously work to improve my clinical
-knowledge and technical skills.
-</p>
-
-</div>
-
-<div class="profile-card">
-
-<h3>Professional Focus</h3>
-
-<p>🫀 Cardiopulmonary Bypass</p>
-<p>❤️ Cardiac Perfusion</p>
-<p>🧪 ABG & Acid-Base Management</p>
-<p>👶 Pediatric Cardiac Surgery</p>
-<p>🏥 Adult Cardiac Surgery</p>
-<p>📊 Hemodynamic Monitoring</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<section class="skills" id="skills">
+<!-- =====================================================
+     PROFESSIONAL EXPERIENCE
+===================================================== -->
 
-<div class="title">
+<section id="experience">
 
-<h2>Clinical Skills</h2>
+    <h2>Professional Experience</h2>
 
-<p>Core areas of professional practice</p>
+    <div class="card-container">
 
-</div>
+        <div class="card">
+            <h3>Mohmand International Hospital</h3>
+            <p>
+                Cardiovascular Perfusion / Cardiac Surgery
+            </p>
+        </div>
 
-<div class="grid">
+        <div class="card">
+            <h3>FMIC</h3>
+            <p>
+                French Medical Institute for Mothers and Children
+            </p>
+        </div>
 
-<div class="card">
-<div class="icon">🫀</div>
-<h3>Cardiopulmonary Bypass</h3>
-<p>
-CPB circuit preparation, initiation, maintenance, monitoring
-and safe separation from bypass.
-</p>
-</div>
+        <div class="card">
+            <h3>Kabul Ali Abad Hospital</h3>
+            <p>
+                Cardiac & Thoracic Department
+            </p>
+        </div>
 
-<div class="card">
-<div class="icon">💉</div>
-<h3>Cardioplegia</h3>
-<p>
-Knowledge of cardioplegia strategies and myocardial protection
-during cardiac surgery.
-</p>
-</div>
+        <div class="card">
+            <h3>ARCS Cardiac Hospital</h3>
+            <p>
+                Cardiovascular Perfusion / Cardiac Surgery
+            </p>
+        </div>
 
-<div class="card">
-<div class="icon">🧪</div>
-<h3>ABG Analysis</h3>
-<p>
-Assessment of blood gases, electrolytes, acid-base balance and
-physiological changes during CPB.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">👶</div>
-<h3>Pediatric Perfusion</h3>
-<p>
-Perfusion support for pediatric cardiac procedures with attention
-to patient size, priming and physiological requirements.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">❤️</div>
-<h3>Cardiac Surgery</h3>
-<p>
-Perfusion support for congenital and acquired cardiac surgical
-procedures.
-</p>
-</div>
-
-<div class="card">
-<div class="icon">📈</div>
-<h3>Patient Monitoring</h3>
-<p>
-Continuous monitoring of pressure, temperature, oxygenation,
-flow and other perfusion parameters.
-</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<section class="experience" id="experience">
+<!-- =====================================================
+     SURGICAL EXPERIENCE
+===================================================== -->
 
-<div class="title">
+<section id="surgeries">
 
-<h2>Professional Experience</h2>
+    <h2>Cardiac Surgery Experience</h2>
 
-<p>Clinical cardiovascular perfusion experience</p>
+    <h3>Congenital Heart Disease — CHD</h3>
 
-</div>
-
-<div class="timeline">
-
-<div class="item">
-
-<h3>Clinical Cardiovascular Perfusionist</h3>
-
-<div class="place">
-Cardiac Surgery & Cardiopulmonary Bypass
-</div>
-
-<p>
-Professional experience supporting cardiac surgical procedures,
-including CPB management, cardioplegia and perioperative
-patient monitoring.
-</p>
-
-</div>
+    <ul>
+        <li>Atrial Septal Defect — ASD</li>
+        <li>Ventricular Septal Defect — VSD</li>
+        <li>Tetralogy of Fallot — TOF</li>
+        <li>AV Canal Defect</li>
+        <li>Pulmonary Stenosis</li>
+        <li>Central Shunt Procedures</li>
+        <li>Other congenital cardiac procedures</li>
+    </ul>
 
 
-<div class="item">
+    <h3>Valvular Heart Disease</h3>
 
-<h3>Mohmand International Hospital</h3>
-
-<div class="place">
-Cardiac Perfusionist
-</div>
-
-<p>
-Experience in cardiac surgery and cardiopulmonary bypass
-practice as part of a multidisciplinary cardiac surgical team.
-</p>
-
-</div>
+    <ul>
+        <li>Mitral Valve Replacement — MVR</li>
+        <li>Aortic Valve Replacement — AVR</li>
+        <li>MVR + AVR</li>
+        <li>MVR + CABG</li>
+        <li>AVR + CABG</li>
+    </ul>
 
 
-<div class="item">
+    <h3>Coronary Artery Disease</h3>
 
-<h3>French Medical Institute for Mothers and Children</h3>
-
-<div class="place">
-Clinical Cardiovascular Perfusion
-</div>
-
-<p>
-Professional cardiac perfusion experience in a specialized
-healthcare environment.
-</p>
-
-</div>
-
-
-<div class="item">
-
-<h3>Kabul Ali Abad Hospital</h3>
-
-<div class="place">
-Cardiac & Thoracic Surgical Care
-</div>
-
-<p>
-Clinical experience related to cardiac surgical and critical
-care services.
-</p>
-
-</div>
-
-</div>
+    <ul>
+        <li>Coronary Artery Bypass Grafting — CABG</li>
+    </ul>
 
 </section>
 
 
-<section class="education" id="education">
+<!-- =====================================================
+     PERFUSION MACHINES
+===================================================== -->
 
-<div class="title">
+<section id="technology">
 
-<h2>Education & Certifications</h2>
+    <h2>CPB Machines & Perfusion Technology</h2>
 
-<p>Academic and professional development</p>
+    <p>
+        Experience with different cardiopulmonary bypass machines,
+        perfusion circuits, oxygenators and related equipment.
+    </p>
 
-</div>
 
-<div class="education-card">
+    <h3>CPB Machines</h3>
 
-<div>
+    <ul>
+        <li>Stockert S5 Heart-Lung Machine</li>
+        <li>Stockert S3 Heart-Lung Machine</li>
+        <li>Sarns 8000 CPB Machine</li>
+    </ul>
 
-<h3>Cardiovascular Perfusion</h3>
 
-<p>
-Professional training and clinical development in cardiac
-perfusion and cardiopulmonary bypass.
-</p>
+    <h3>Oxygenators</h3>
 
-</div>
-
-<div>
-
-<h3>Nursing Education</h3>
-
-<p>
-Nursing education with clinical experience in critical care
-and cardiac care environments.
-</p>
-
-</div>
-
-<div>
-
-<h3>Professional Certifications</h3>
-
-<p>
-BLS • ACLS • PALS • ABG • Critical Care
-</p>
-
-</div>
-
-<div>
-
-<h3>Continuous Professional Development</h3>
-
-<p>
-Ongoing learning in cardiopulmonary bypass, cardiac surgery,
-perfusion technology and critical care.
-</p>
-
-</div>
-
-</div>
+    <ul>
+        <li>Nipro Thymus Oxygenator</li>
+        <li>Nipro Brizio Adult Oxygenator</li>
+        <li>Nipro Oxim II 06</li>
+        <li>Medtronic Oxygenator Systems</li>
+        <li>Sorin D902</li>
+        <li>Sorin D901</li>
+        <li>Eurosets Pediatric Oxygenator Systems</li>
+        <li>Eurosets Adult Oxygenator Systems</li>
+        <li>Capiox FX05</li>
+        <li>Capiox FX15</li>
+        <li>Capiox FX25</li>
+    </ul>
 
 </section>
 
 
-<section class="achievements">
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
 
-<div class="title">
+<section id="education">
 
-<h2>Professional Highlights</h2>
+    <h2>Education</h2>
 
-<p>Dedicated to safe and high-quality cardiac surgical care</p>
+    <ul>
 
-</div>
+        <li>
+            <strong>Nursing</strong><br>
+            Graduate of Nursing
+        </li>
 
-<div class="stats">
+        <li>
+            <strong>Anesthesia</strong><br>
+            Graduate of Anesthesia Program
+        </li>
 
-<div class="stat">
+        <li>
+            <strong>Pharmacy</strong><br>
+            Graduate of Pharmacy Program
+        </li>
 
-<h3>4+</h3>
+        <li>
+            <strong>Medicine</strong><br>
+            Current Medical Student
+        </li>
 
-<p>Years in Cardiovascular Perfusion</p>
-
-</div>
-
-<div class="stat">
-
-<h3>CPB</h3>
-
-<p>Cardiopulmonary Bypass Experience</p>
-
-</div>
-
-<div class="stat">
-
-<h3>Adult & Pediatric</h3>
-
-<p>Cardiac Perfusion Experience</p>
-
-</div>
-
-</div>
+    </ul>
 
 </section>
 
 
-<section class="contact" id="contact">
+<!-- =====================================================
+     CERTIFICATES
+===================================================== -->
 
-<div class="title">
+<section id="certificates">
 
-<h2>Let's Connect</h2>
+    <h2>Certificates & Professional Training</h2>
 
-<p>
-I am open to professional networking, collaboration,
-learning opportunities and cardiovascular perfusion discussions.
-</p>
+    <ul>
+        <li>Basic Life Support — BLS</li>
+        <li>Advanced Cardiovascular Life Support — ACLS</li>
+        <li>Arterial Blood Gas Analysis — ABG</li>
+        <li>Electrocardiography — ECG</li>
+        <li>Cardiac Arrhythmia Recognition</li>
+        <li>Critical Care Training</li>
+        <li>Cardiovascular Perfusion Training</li>
+    </ul>
 
-</div>
-
-<a href="mailto:your-email@example.com" class="btn">
-Email Me
-</a>
-
-<a href="#" class="btn outline">
-LinkedIn
-</a>
+    <p>
+        Professional certificates, recommendation letters,
+        appreciation certificates and supporting documents are
+        available from institutions where I have worked.
+    </p>
 
 </section>
 
 
-<footer>
+<!-- =====================================================
+     PERFUSION EDUCATION CENTER
+===================================================== -->
 
-<p>
-© 2026 <strong>Noor Popal</strong>. All Rights Reserved.
-</p>
+<section id="perfusionschool">
 
-<p>
-Clinical Cardiovascular Perfusionist
-</p>
+    <h2>Cardiovascular Perfusion Education Center</h2>
 
-</footer>
+    <div class="pashto">
 
-</body>
-</html>
+        <h3>د پرفیوژن تعلیمي برخه</h3>
+
+        <p>
+            په دې ویب‌پاڼه کې به د Cardiovascular Perfusion او
+            Cardiopulmonary Bypass اړوند بنسټیز، عملي او مسلکي
+            معلومات په پښتو، دري او English ژبو خپرېږي.
+        </p>
+
+        <p>
+            هدف دا دی چې د Perfusionists، Cardiac Surgery Team،
+            Anesthesia professionals، Nurses او Medical Students
+            لپاره د پرفیوژن اساسي معلومات په منظم ډول وړاندې شي.
+        </p>
+
+    </div>
+
+
+    <!-- CPB -->
+
+    <h3>1. Cardiopulmonary Bypass — CPB</h3>
+
+    <div class="pashto">
+
+        <p>
+            <strong>CPB څه شی دی؟</strong>
+        </p>
+
+        <p>
+            Cardiopulmonary Bypass هغه سیستم دی چې د زړه او سږو د
+            فعالیت یوه برخه په موقتي ډول د Heart-Lung Machine په
+            وسیله ترسره کوي، څو جراح وکولای شي د زړه دننه عملیات
+            ترسره کړي.
+        </p>
+
+        <p>
+            پرفیوژنسټ د CPB په جریان کې د وینې جریان، اکسیجنیشن،
+            CO₂ removal، حرارت، حجم، فشار، Anticoagulation او
+            نورو مهمو فزیولوژیکي پارامترونو څارنه او مدیریت کوي.
+        </p>
+
+    </div>
+
+
+    <!-- PRIMING -->
+
+    <h3>2. CPB Priming — پرایمینګ</h3>
+
+    <div class="pashto">
+
+        <p>
+            <strong>Priming ولې کوو؟</strong>
+        </p>
+
+        <p>
+            د CPB circuit د ناروغ له وینې سره د نښلولو څخه مخکې
+            circuit باید له مناسب مایع څخه ډک او له هوا څخه پاک شي.
+            دا کار د Pump، Oxygenator، Tubing او Reservoir د مناسب
+            فعالیت لپاره ضروري دی.
+        </p>
+
+        <p>
+            د Priming د محلول ترکیب د ناروغ د عمر، وزن، BSA،
+            Preoperative Hct، جراحي ډول او د روغتون له Protocol
+            سره تړاو لري.
+        </p>
+
+        <p>
+            د CPB په پیل کې د crystalloid prime له امله
+            Hemodilution رامنځته کېدای شي؛ له همدې امله د Prime
+            حجم کمول او مناسب Patient Blood Management مهم دي.
+        </p>
+
+        <p>
+            Autologous Priming هم یوه تخنیک دی چې د ناروغ خپله وینه
+            د Circuit له Prime څخه د یوې برخې د ایستلو لپاره کارول
+            کېږي، چې د Hemodilution د کمولو هدف لري.
+        </p>
+
+    </div>
+
+
+    <!-- CARDIOPLEGIA -->
+
+    <h3>3. Cardioplegia — کارډیوپلیجیا</h3>
+
+    <div class="pashto">
+
+        <p>
+            Cardioplegia هغه محلول یا ستراتیژي ده چې د زړه د موقتي
+            توقف او د Myocardial Protection لپاره کارول کېږي.
+        </p>
+
+        <p>
+            اصلي هدف یې دا دی چې د Aortic Cross-Clamp په وخت کې د
+            زړه د عضلې د اکسیجن اړتیا راکمه کړي، زړه په مناسب ډول
+            Arrest کړي او د Ischemia/Reperfusion Injury خطر کم کړي.
+        </p>
+
+        <p>
+            Cardioplegia د مختلفو اصولو له مخې طبقه بندي کېدای شي:
+        </p>
+
+        <ul>
+            <li>Blood Cardioplegia</li>
+            <li>Crystalloid Cardioplegia</li>
+            <li>Cold Cardioplegia</li>
+            <li>Tepid Cardioplegia</li>
+            <li>Warm Cardioplegia</li>
+            <li>Single-Dose Cardioplegia</li>
+            <li>Multi-Dose Cardioplegia</li>
+            <li>Antegrade Cardioplegia</li>
+            <li>Retrograde Cardioplegia</li>
+            <li>Combined Antegrade + Retrograde</li>
+        </ul>
+
+        <p>
+            د Cardioplegia انتخاب او د بیا ورکولو وخت باید د جراحۍ
+            ډول، د زړه حالت، د محلول ډول، Temperature او د مرکز
+            Protocol سره سم وټاکل شي.
+        </p>
+
+    </div>
+
+
+    <!-- CANNULATION -->
+
+    <h3>4. Cannulation — کینولېشن</h3>
+
+    <div class="pashto">
+
+        <p>
+            Cannulation د CPB لپاره د Arterial او Venous Cannula
+            مناسب ځای پر ځای کول دي.
+        </p>
+
+        <p>
+            د Arterial Cannula له لارې اکسیجن لرونکې وینه د CPB
+            circuit څخه ناروغ ته ورکول کېږي، او Venous Cannula د
+            ناروغ وینه د Reservoir/Oxygenator طرف ته انتقالوي.
+        </p>
+
+        <p>
+            د Cannulation ډول د جراحۍ، ناروغ، Anatomical condition
+            او Surgical plan له مخې ټاکل کېږي.
+        </p>
+
+    </div>
+
+
+    <!-- VENTING -->
+
+    <h3>5. Venting — وینټ</h3>
+
+    <div class="pashto">
+
+        <p>
+            Venting د زړه د Chamberونو څخه د وینې یا هوا د کنټرول
+            لپاره کارول کېږي.
+        </p>
+
+        <p>
+            مناسب Venting کولی شي د زړه د Distension په مخنیوي،
+            د Surgical Field په ښه کولو او د Myocardial Protection
+            په مدیریت کې مرسته وکړي.
+        </p>
+
+    </div>
+
+
+    <!-- OXYGENATOR -->
+
+    <h3>6. Oxygenator — اوکسیجینیټر</h3>
+
+    <div class="pashto">
+
+        <p>
+            Oxygenator د CPB په سیستم کې د سږو په څېر عمل کوي.
+            له وینې څخه CO₂ لرې کوي او وینې ته Oxygen انتقالوي.
+        </p>
+
+        <p>
+            د Oxygenator انتخاب باید د ناروغ د وزن، BSA، Flow
+            requirement، Manufacturer specification او د CPB
+            Circuit له جوړښت سره برابر وي.
+        </p>
+
+    </div>
+
+
+    <!-- CIRCUIT -->
+
+    <h3>7. CPB Circuit — سرکټ</h3>
+
+    <div class="pashto">
+
+        <p>
+            CPB Circuit د Reservoir، Pump، Oxygenator، Arterial
+            Line، Venous Line، Filters، Sampling Lines، Temperature
+            Monitoring او نورو اړینو اجزاوو څخه جوړېږي.
+        </p>
+
+        <p>
+            د Circuit د کارولو مخکې باید د ټولو Connections،
+            Clamps، Filters، Pressure Monitoring، Gas Supply،
+            Temperature probes او د Air elimination سیستمونه
+            په منظم ډول وکتل شي.
+        </p>
+
+    </div>
+
+
+    <!-- ANTICOAGULATION -->
+
+    <h3>8. Anticoagulation & ACT</h3>
+
+    <div class="pashto">
+
+        <p>
+            د CPB پر مهال د وینې د Clotting د مخنیوي لپاره
+            Anticoagulation ضروري ده.
+        </p>
+
+        <p>
+            Heparin د CPB په جریان کې د Anticoagulation لپاره
+            کارول کېږي او ACT د Anticoagulation د څارنې له مهمو
+            وسیلو څخه دی.
+        </p>
+
+        <p>
+            د Heparin dose او د ACT هدف باید د مرکز Protocol،
+            ناروغ او Clinical situation مطابق وټاکل شي.
+        </p>
+
+    </div>
+
+
+    <!-- ABG -->
+
+    <h3>9. ABG During CPB</h3>
+
+    <div class="pashto">
+
+        <p>
+            د CPB پر مهال ABG د Oxygenation، Ventilation، Acid-Base
+            status، Electrolytes او نورو مهمو پارامترونو د ارزونې
+            لپاره کارول کېږي.
+        </p>
+
+        <p>
+            Perfusionist باید د ABG نتیجه د Temperature، FiO₂،
+            Sweep Gas، Pump Flow او ناروغ د فزیولوژیکي حالت سره
+            یو ځای تفسیر کړي.
+        </p>
+
+    </div>
+
+
+    <!-- DO2 -->
+
+    <h3>10. Oxygen Delivery — DO₂</h3>
+
+    <div class="pashto">
+
+        <p>
+            DO₂ د بدن نسجونو ته د اکسیجن د انتقال اندازه ده.
+            د CPB پر مهال یوازې Pump Flow ته کتل کافي نه دي؛
+            Hemoglobin، Arterial Oxygen Saturation او Cardiac
+            Index/Flow هم د Oxygen Delivery په مدیریت کې مهم دي.
+        </p>
+
+        <p>
+            معاصر Goal-Directed Perfusion د DO₂ په څېر شاخصونو
+            کارولو ته اهمیت ورکوي، او د 2024 EACTS/EACTAIC/EBCP
+            لارښودونه د CPB پر مهال د ټیټ DO₂ د وخت او شدت کمولو
+            ته توجه کوي.
+        </p>
+
+    </div>
+
+
+    <!-- TEMPERATURE -->
+
+    <h3>11. Temperature Management</h3>
+
+    <div class="pashto">
+
+        <p>
+            د CPB پر مهال Temperature Management د دماغ، زړه،
+            پښتورګو او نورو غړو د محافظت لپاره مهم دی.
+        </p>
+
+        <p>
+            Cooling او Rewarming باید په کنټرول شوې او منظمې
+            طریقې ترسره شي، او د ناروغ د مختلفو Temperature
+            sites څارنه مهمه ده.
+        </p>
+
+    </div>
+
+
+    <!-- HEMOCONCENTRATION -->
+
+    <h3>12. Hemoconcentration & Ultrafiltration</h3>
+
+    <div class="pashto">
+
+        <p>
+            Hemoconcentration/Ultrafiltration د CPB پر مهال د
+            اضافي اوبو د لرې کولو او د Hematocrit او Volume
+            Management لپاره کارېدلی شي.
+        </p>
+
+        <p>
+            د Ultrafiltration ډول او استعمال باید د ناروغ حالت،
+            جراحي ډول، Fluid balance او institutional protocol
+            مطابق وټاکل شي.
+        </p>
+
+    </div>
+
+
+    <!-- WEANING -->
+
+    <h3>13. Weaning From CPB</h3>
+
+    <div class="pashto">
+
+        <p>
+            له CPB څخه Weaning د Cardiac Surgery یوه مهمه مرحله ده.
+            مخکې له Weaning څخه باید د زړه Rhythm، Temperature،
+            Ventilation، ABG، Electrolytes، Hemodynamics،
+            Volume status او Surgical correction ارزول شي.
+        </p>
+
+        <p>
+            Perfusionist، Surgeon او Ane
